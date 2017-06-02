@@ -1,0 +1,5 @@
+Django==1.11.1
+argparse==1.2.1
+pytz==2017.2
+simplejson==3.10.0
+wsgiref==0.1.2
