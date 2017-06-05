@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sites',
     'schools',
     #'fullhistory',
+    'assessments',
 ]
 
 SITE_ID = 1

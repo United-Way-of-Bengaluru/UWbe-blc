@@ -29,13 +29,3 @@ admin.site.register(Student_StudentGroupRelation)
 
 
 admin.site.register(Staff_StudentGroupRelation)
-admin.site.register(Programme)
-admin.site.register(Assessment)
-admin.site.register(Assessment_Lookup)
-
-
-
-admin.site.register(Assessment_StudentGroup_Association)
-admin.site.register(Assessment_Class_Association)
-admin.site.register(Question)
-admin.site.register(Answer)
