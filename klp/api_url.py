@@ -16,7 +16,7 @@ from rest_framework import routers, serializers, viewsets
 class Institution_CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Institution_Category
-        fields = (__all__)
+        fields = '__all__'
 
 
 
