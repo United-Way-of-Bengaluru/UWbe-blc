@@ -5,11 +5,30 @@ from rest_framework import routers, serializers, viewsets
 
 
 # Serializers define the API representation.
-class InstitutionSerializer(serializers.HyperlinkedModelSerializer):
+# class InstitutionSerializer(serializers.HyperlinkedModelSerializer):
+#     class Meta:
+#         model = Institution
+#         fields = ('dise_code', 'name')
+
+        
+
+
+class Institution_CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Institution_Category
+        fields = (__all__)
+
+
+
+class InstitutionSerializer(serializers.ModelSerializer):
+    cat= Institution_CategorySerializer()
     class Meta:
         model = Institution
-        fields = ('dise_code', 'name')
+        fields = ('dise_code', 'name','cat')
 
+        
+ 
+        
 # ViewSets define the view behavior.
 class InstitutionViewSet(viewsets.ModelViewSet):
     queryset = Institution.objects.all()
