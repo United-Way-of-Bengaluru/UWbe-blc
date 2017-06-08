@@ -8,7 +8,7 @@ from rest_framework import routers, serializers, viewsets
 class InstitutionSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Institution
-        fields = ('boundary', 'dise_code', 'name', 'cat')
+        fields = ('dise_code', 'name')
 
 # ViewSets define the view behavior.
 class InstitutionViewSet(viewsets.ModelViewSet):
