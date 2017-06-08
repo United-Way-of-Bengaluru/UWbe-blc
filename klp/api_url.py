@@ -5,7 +5,7 @@ from rest_framework import routers, serializers, viewsets
 
 
 # Serializers define the API representation.
-class InstitutionSerializer(serializers.HyperlinkedModelSerializer):
+class InstitutionSerializer(serializers.HyperlinkedModelSerializer):    
     class Meta:
         model = Institution
         fields = ('dise_code', 'name')
